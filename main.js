@@ -11,9 +11,11 @@ app.directive("cats", function() {
 
        },
        templateUrl: "allCats.html",
-       link: function(scope) {
-        scope.meOW = function() {
-            console.log("MEOW!!!");
+       link: function(scope, elem, attrs) {
+        scope.meOW = function(ev) {
+
+            var images = ['cat1.jpg','cat2.png','cat3.png'];
+            elem.append("<img src='img/"+images[0]+"' style='position:relative; top:"+ev.y+"; left:"+ev.x+";'/>");
         }
        }
    }

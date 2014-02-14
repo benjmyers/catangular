@@ -3,16 +3,14 @@ html {
 }
 body {
     min-height:100%;
-    background-image: url("plaid.jpg");
+    background-image: url("img/plaid.jpg");
     font-family: 'Bowlby One';
 }
 .header-cats {
     height: 20%;
     width: 100%;
-    color: white;
 }
 .allCats {
-    height: 100%;
+    height: 600px;
     width: 100%;
-    background-color: #c2c2c2;
 }
