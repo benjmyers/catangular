@@ -1,8 +1,5 @@
-html {
-    height:100%;
-}
 body {
-    min-height:100%;
+    height:100%;
     background-image: url("img/plaid.jpg");
 }
 h1 {
@@ -11,22 +8,27 @@ h1 {
 p {
     color: #e80a4c;
 }
+
+html, cats, .ng-scope {
+    height: 100%;
+}
+
 .header-cats {
+    height:100%;
     display: inline-block;
     float: left;
     background-color: aliceblue;
     color: #2ba6cb;
     opacity: 0.8;
-    height: 800px;
     width: 15%;
     z-index: 11000;
     padding: 5px;
 
 }
 .allCats {
+    height:100%;
     display: inline-block;
     position: relative;
-    height: 800px;
     width: 85%;
     z-index: 10000;
 }
@@ -34,5 +36,5 @@ p {
 .button {
     margin: 5px;
     margin-left: 18px;
-    width: 150px;
+    width: 75%;
 }
