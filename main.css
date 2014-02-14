@@ -11,6 +11,7 @@ body {
     width: 100%;
 }
 .allCats {
+    position: relative;
     height: 600px;
     width: 100%;
 }
