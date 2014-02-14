@@ -17,8 +17,8 @@ app.directive("cats", function() {
        templateUrl: "allCats.html",
        link: function(scope, elem, attrs) {
         scope.meOW = function(ev) {
-            var images = ['cat1.jpg','cat2.png','cat3.png'];
-            elem.append("<img src='img/"+images[0]+"' style='position:absolute; top:"+ev.y+"px; left:"+ev.x+"px;'/>");
+            var randomCat = Math.floor(1+Math.random()*9); // there are 9 cat images in the img/ dir
+            elem.append("<img src='img/cat"+randomCat+".png' style='position:absolute; top:"+ev.y+"px; left:"+ev.x+"px;'/>");
         }
        }
    }
